@@ -38,6 +38,8 @@
                         'process-yollow': 'rgb(239, 218, 110);',
                         'process-green': 'rgb(164, 218, 195);',
                         'process-blue': 'rgb(119, 170, 234);',
+                        'bg-footer': 'rgb(28, 28, 28)',
+                        'text-footer': 'rgb(115, 115, 115)',
                     }
                 }
             }
@@ -204,7 +206,8 @@
                 <p class="text-center px-1">The barn house captivates with its blend of rustic charm and modern
                     sophistication,<br> featuring weathered wood, sleek metal accents.</p>
 
-                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-4 gap-5 lg:gap-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-4 gap-5 lg:gap-0">
+
                     <div class="space-y-2 p-6 bg-process-red rounded-2xl">
                         <img src="assets/concept.png" alt="">
                         <h3 class="text-xl font-bold">Concept</h3>
@@ -324,18 +327,54 @@
 
         </section>
 
-        <section id="discuss" class="flex flex-col  justify-center items-center mt-28 bg-cover"
+        <section id="discuss" class=" mt-28 pt-24 bg-cover py-24"
         style="background-image: url(assets/bg.jpg);">
+
+        <div class="space-y-6 mb-8">
+            <button class="btn block m-auto rounded-3xl text-base bg-color-secondry2"><i
+                class="fa-solid fa-arrow-right rounded-2xl p-1"></i> Let’s Connect</button>
+
+                <h1 class="font-black text-5xl text-center" >Let’s Discuss Next Project</h1>
+                <p class="text-center px-1 tracking-widest">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+           </div>
+
+        <div class="flex justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name*" class="input w-full max-w-lg pr-32 lg:pr-80 " />
+                <input type="text" placeholder="Last Name*" class="input w-full max-w-lg pr-32 lg:pr-80" />
+                <input type="text" placeholder="Phone Number*" class="input w-full max-w-lg pr-32 lg:pr-80" />
+                <input type="text" placeholder="Email Number*" class="input w-full max-w-lg pr-32 lg:pr-80" />
+                <textarea class="textarea textarea-lg lg:col-span-2" placeholder="Write your message here"></textarea>
+                <button class="btn rounded-3xl text-base bg-color-primary lg:col-span-2"><i
+                    class="fa-solid fa-arrow-right rounded-2xl"></i> Let’s Connect</button>
+                
+            </div>
 
         </section>
 
     </main>
 
     <!-- footer section -->
-    <footer>
-
-
-    </footer>
+    <footer class="footer footer-center bg-bg-footer text-white p-24">
+        <aside>
+            <a class="text-xl font-extrabold mb-4"><i
+                class="fa-solid fa-arrow-right -rotate-45 bg-color-primary rounded-2xl p-1"></i>
+            Rinterio</a>
+          <p class="text-text-footer mb-12"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <div class="grid grid-cols-1 md:grid-cols-5 mb-12 gap-8 md:gap-0">
+          <p><a href="">Home</a></p>
+          <p><a href="">Service</a></p>
+          <p><a href="">Portfolio</a></p>
+          <p><a href="">Blogs</a></p>
+          <p><a href="">Contact Us</a></p>
+          </div>
+          <a class="btn bg-color-primary rounded-3xl font-extrabold text-base">Book Consult<i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-2xl p-1 text-white"></i></a>
+        </aside>
+        <nav>
+        
+        </nav>
+      </footer>
 </body>
 
 </html>
