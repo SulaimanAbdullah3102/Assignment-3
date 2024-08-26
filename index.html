@@ -33,6 +33,10 @@
                         'color-primary': 'rgb(171, 239, 95)',
                         'color-secondry': 'rgba(171, 239, 95, 0.5)',
                         'bg-primary': 'rgb(30, 30, 30);',
+                        'process-red': 'rgb(231, 193, 211);',
+                        'process-yollow': 'rgb(239, 218, 110);',
+                        'process-green': 'rgb(164, 218, 195);',
+                        'process-blue': 'rgb(119, 170, 234);',
                     }
                 }
             }
@@ -114,7 +118,7 @@
 
         <!-- about us section -->
         <section id="about-us" class="bg-slate-200 pt-16 mt-24 pb-28">
-            <div id="about-banner">
+            <div id="about-banner" class="container">
                 <img src="assets/Vector.png" alt="" class="relative bottom-2 left-16 hidden lg:flex">
                 <div class="container mx-auto flex flex-col lg:flex-row gap-8">
                     <div id="left" class="flex-1 px-2 lg:pl-24 space-y-5">
@@ -131,7 +135,7 @@
 
                         <div class="card card-side bg-base-100 lg:py-2 lg:pl-5">
                             <figure>
-                                <img src="assets/commercial.png" alt="" class="pl-2 lg:pl-0"/>
+                                <img src="assets/commercial.png" alt="" class="pl-2 lg:pl-0" />
                             </figure>
                             <div class="card-body">
                                 <h2 class="card-title">Commercial</h2>
@@ -141,7 +145,7 @@
 
                         <div class="card card-side bg-base-100  lg:py-2 lg:pl-5">
                             <figure>
-                                <img src="assets/residential.png" alt="" class="pl-2 lg:pl-0"/>
+                                <img src="assets/residential.png" alt="" class="pl-2 lg:pl-0" />
                             </figure>
                             <div class="card-body">
                                 <h2 class="card-title">Residential</h2>
@@ -159,36 +163,79 @@
             </div>
 
             <div id="stat" class="flex justify-center mt-28">
-                <div class="stats shadow">
+                <div class="stats shadow stats-vertical lg:stats-horizontal">
                     <div class="stat px-20 pt-12 pb-16">
-                      <div class="text-center font-bold text-2xl"><i class="fa-regular fa-message"></i></div>
-                      <div class="stat-value text-center">235+</div>
-                      <div class="stat-desc text-center">Happy Client Review</div>
+                        <div class="text-center font-bold text-2xl"><i class="fa-regular fa-message"></i></div>
+                        <div class="stat-value text-center">235+</div>
+                        <div class="stat-desc text-center">Happy Client Review</div>
                     </div>
 
                     <div class="stat px-20 pt-12 pb-16">
-                      <div class="text-center font-bold text-2xl"><i class="fa-regular fa-building"></i></div>
-                      <div class="stat-value text-center">50+</div>
-                      <div class="stat-desc text-center">Work Departments</div>
+                        <div class="text-center font-bold text-2xl"><i class="fa-regular fa-building"></i></div>
+                        <div class="stat-value text-center">50+</div>
+                        <div class="stat-desc text-center">Work Departments</div>
                     </div>
 
                     <div class="stat px-20 pt-12 pb-16">
-                      <div class="text-center font-bold text-2xl"><i class="fa-solid fa-users"></i></div>
-                      <div class="stat-value text-center">30k+</div>
-                      <div class="stat-desc text-center">Our Happy Client</div>
+                        <div class="text-center font-bold text-2xl"><i class="fa-solid fa-users"></i></div>
+                        <div class="stat-value text-center">30k+</div>
+                        <div class="stat-desc text-center">Our Happy Client</div>
                     </div>
 
                     <div class="stat px-20 pt-12 pb-16">
-                      <div class="text-center font-bold text-2xl"><i class="fa-solid fa-user-group"></i></div>
-                      <div class="stat-value text-center">307+</div>
-                      <div class="stat-desc text-center">Staff Members</div>
+                        <div class="text-center font-bold text-2xl"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="stat-value text-center">307+</div>
+                        <div class="stat-desc text-center">Staff Members</div>
                     </div>
 
-                 
-                  </div>
 
-                  
+                </div>
 
+
+
+            </div>
+
+            <div id="work-process" class="flex flex-col  justify-center items-center mt-28 space-y-6">
+                <button class="btn block m-auto rounded-3xl text-base"><i
+                        class="fa-solid fa-arrow-right rounded-2xl p-1"></i> View Details</button>
+
+                <h1 class="font-extrabold text-4xl">Our Works Process</h1>
+                <p class="text-center px-1">The barn house captivates with its blend of rustic charm and modern
+                    sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-4 gap-5 lg:gap-0">
+                    <div class="space-y-2 p-6 bg-process-red rounded-2xl">
+                        <img src="assets/concept.png" alt="">
+                        <h3 class="text-xl font-bold">Concept</h3>
+                        <p>The barn house captivates <br class="hidden lg:flex">
+                            with its <br class="md:hidden"> blend <br class="hidden md:flex lg:hidden"> of rustic charm <br class="hidden lg:flex">
+                            and modern.</p>
+                    </div>
+
+                    <div class="space-y-2 p-6 bg-process-yollow rounded-2xl">
+                        <img src="assets/flow-chart.png" alt="">
+                        <h3 class="text-xl font-bold">Design Process</h3>
+                        <p>The barn house captivates <br class="hidden lg:flex">
+                            with its <br class="md:hidden"> blend <br class="hidden md:flex lg:hidden"> of rustic charm <br class="hidden lg:flex">
+                            and modern.</p>
+                    </div>
+
+                    <div class="space-y-2 p-6 bg-process-green rounded-2xl">
+                        <img src="assets/vision.png" alt="">
+                        <h3 class="text-xl font-bold">Supervision</h3>
+                        <p>The barn house captivates <br class="hidden lg:flex">
+                            with its <br class="md:hidden"> blend <br class="hidden md:flex lg:hidden"> of rustic charm <br class="hidden lg:flex">
+                            and modern.</p>
+                    </div>
+
+                    <div class="space-y-2 p-6 bg-process-blue rounded-2xl">
+                        <img src="assets/budget-planning.png" alt="">
+                        <h3 class="text-xl font-bold">Budget Planning</h3>
+                        <p>The barn house captivates <br class="hidden lg:flex">
+                            with its <br class="md:hidden"> blend <br class="hidden md:flex lg:hidden"> of rustic charm <br class="hidden lg:flex">
+                            and modern.</p>
+                    </div>
+                </div>
             </div>
 
         </section>
